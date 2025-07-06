@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            h2{
+                color: black;
+            }
+.container { background: #fff;
+    padding: 20px; 
+    margin-bottom: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 0 5px #ccc;
+    }
+     input, button { padding: 5px 10px; 
+        margin: 5px 0; 
+    }  
+    .btn { cursor: pointer; background: #4CAF50;
+        color: white;
+        border: none; 
+        border-radius: 4px; }  
+    </style>
+    <title>Bill split</title>
+    </head>
+<body>
+<div class="container" id="loginContainer">
+    <h2>Sign in</h2>
+    <input type="text" id="usernameInput" placeholder="Enter your name">
+    <button class="btn" onclick="login()">Create Account</button>
+</div>
+<div class="container" id="appContainer" >
+    <h2>Welcome To SplitWise, <span id="currentUser"></span><br>
+         <button class="btn" onclick="logout()">Logout</button></h2>
+<div>
+      <h3>Add Friends</h3>
+<input type="text" id="addFriendInput" placeholder="Enter username to add">
+<button class="btn" onclick="addFriend()">Add</button>
+<div id="addFriendMessage" style="color: red;"></div>
+
+<h4>Your Friends</h4>
+<div id="friendList"></div>
+
+    </div>
+<div>
+      <h3>Create Group</h3>
+      <input type="text" id="groupNameInput" placeholder="Group Name">
+      <button class="btn" onclick="createGroup()">Create</button>
+      <div id="groupList"></div>
+    </div>
+<div id="selectedGroupContainer" style="display:none;">
+      <h3>Group: <span id="selectedGroupName"></span> <button class="btn" onclick="deleteGroup()">Delete Group</button></h3>
+      <div class="section-title">Members</div>
+      <div id="memberList"></div>
+      <div>
+        <select id="addMemberSelect"></select>
+        <button class="btn" onclick="addMember()">Add/Remove Member</button>
+      </div>
+
+      <div class="section-title">Expenses</div>
+      <input type="text" id="expenseDesc" placeholder="Description">
+      <input type="text" id="expenseCategory" placeholder="Category">
+      <input type="number" id="expenseAmount" placeholder="Amount">
+      <button class="btn" onclick="addExpense()">Add Expense</button>
+      <div id="expenseList"></div>
+
+      <div class="section-title">Split Calculation</div>
+      <div id="splitResults"></div>
+    </div>
+  </div>
+
+</body>
+</html>
