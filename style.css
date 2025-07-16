@@ -1,0 +1,31 @@
+body{
+    font-family: arial,sans-serif;
+    margin: 20px;
+    background: rgb(61, 61, 142);
+}
+section {
+    background: rgb(61, 61, 142);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 2px solid white;
+}
+h1,h2{
+    color: #f0f0f0;
+}
+input, button{
+    border-radius: 5px;
+    padding: 10px;
+    margin: 11px;
+}
+button:hover{
+    background-color: yellow ;
+    color: black;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    padding: 5px 0;
+}
