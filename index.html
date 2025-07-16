@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+
+        <title>Bill Split</title>
+    </head>
+<body>
+<h1>Bill Split App</h1>
+<!--for login --> 
+<section id="login">
+    <h2>Login</h2>
+<input type="text" id="username" placeholder="enter username">
+<input type="password" id="password" placeholder="enter password">
+<button id="login-btn">Login</button>
+
+<h2>Register</h2>
+<input type="text" id="new-username" placeholder="enter new username">
+<input type="password" id="new-password" placeholder="enter new password">
+<button id="register-btn">Register</button>
+</section>
+<!-- front window-->
+<section id="frontlook" style="display: none;">
+    <h2>Welcome to Bill Split, <span id='current-user'></span></h2>
+    <button id="logout-btn">Logout</button>
+<h3>Friends to Add ! </h3>
+<div>
+    <input type="text" id="search-friend" placeholder="search friend">
+    <button id="search-btn">Search</button>
+    <ul id="results"></ul>
+
+</div>
+<ul id="friend-list"></ul>
+<h3>Create Group for Split !</h3>
+<input type="text" id="group-name" placeholder="enter group name">
+<button id="create-grp">Create A Group</button>
+<h3>Groups</h3>
+<ul id='group-list'></ul>
+</section>
+<!-- group window-->
+ <section id="group-window" style="display:none;">
+    <button id="back-btn">Back</button>
+    <h2 id="group-title"></h2>
+    <div>
+        <input type="text" id="category" placeholder="enter category">
+        <input type="number" id="amount" placeholder="enter amount">
+        <button id="add-amount">Add Expenses</button>
+    </div>
+    <h3>YOUR EXPENSES!</h3>
+    <ul id="expense-list"></ul>
+    <h3>Balance</h3>
+    <ul id="balance-list"></ul>
+    <button id="delete-grp">Delete Group</button>
+ </section>
+ <script src="script.js"></script>
+</body>
+</html>
